@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.eot');
+    src: url('../fonts/Poppins-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Poppins-Light.woff2') format('woff2'),
+    url('../fonts/Poppins-Light.woff') format('woff'),
+    url('../fonts/Poppins-Light.svg#Poppins-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.eot');
+    src: url('../fonts/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Poppins-Bold.woff2') format('woff2'),
+    url('../fonts/Poppins-Bold.woff') format('woff'),
+    url('../fonts/Poppins-Bold.svg#Poppins-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.eot');
+    src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Poppins-Regular.woff2') format('woff2'),
+    url('../fonts/Poppins-Regular.woff') format('woff'),
+    url('../fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --main-font-color: #17376A;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #FBFBFB;
+    width: 100vw;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-font-color);
+}
+
+input {
+    background-color: #FBFBFB;
+    border: none
+}
+
+input:focus {
+    outline: none;
+}
+
+div.container {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    background-color: #FBFBFB;
+    padding-top: 5vh;
+    top: 0;
+    height: 6vh;
+    width: 100%;
+    animation: lazyLoad 2s forwards;
+}
+
+nav > img {
+    height: 100%;
+}
+
+nav > div {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .searchbar label > img {
+    position: relative;
+    height: 22px;
+    right: -25px;
+}
+
+nav .searchbar label > input {
+    border-bottom: 1px solid var(--main-font-color);
+    padding-left: 25px;
+}
+
+section {
+    width: 100%;
+}
+
+section .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 10vw;
+    color: #FBFBFB;
+    text-shadow: 0 3px 3px black;
+}
+
+section#lookBooks {
+    display: flex;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+}
+
+section#lookBooks .text {
+    animation: lazyLoad 2s forwards;
+}
+
+section#lookBooks h1 {
+    font-size: 101px;
+    line-height: 1;
+    margin: 0;
+}
+
+section#lookBooks h2 {
+    font-size: 32px;
+    font-weight: lighter;
+    margin-top: 0;
+}
+
+section#lookBooks a {
+    text-shadow: none;
+    font-weight: bold;
+    background-color: #FBFBFB;
+    padding: 10px 40px;
+}
+
+.background-anim {
+    position: absolute;
+    margin-top: 15vh;
+    width: 80%;
+    height: 600px;
+    background-image: url("../img/background-zone1.png");
+    background-size: cover;
+    background-position: center;
+    animation: startPage 2s forwards;
+}
+
+@keyframes startPage {
+    0% {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+    }
+
+    40% {
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    100% {
+    }
+}
+
+@keyframes lazyLoad {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
