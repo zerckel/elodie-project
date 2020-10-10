@@ -79,7 +79,7 @@ nav {
     position: sticky;
     background-color: #FBFBFB;
     padding: 5vh 0 35px;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     height: 6vh;
     width: 100%;
@@ -106,11 +106,13 @@ nav .searchbar label > img {
 }
 
 nav .searchbar label > input {
+    font-size: 25px;
+    width: 183px;
     border-bottom: 1px solid var(--main-font-color);
     padding-left: 25px;
 }
 
-nav.onScroll{
+nav.onScroll {
     padding: 4vh 0 25px;
 }
 
@@ -123,9 +125,7 @@ section .text {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    margin-left: 10vw;
     color: #FBFBFB;
-    text-shadow: 0 3px 3px black;
 }
 
 section#patterns {
@@ -137,6 +137,8 @@ section#patterns {
 }
 
 section#patterns .text {
+    margin-left: 10vw;
+    text-shadow: 0 3px 3px black;
     animation: lazyLoad 2s forwards;
 }
 
@@ -157,9 +159,12 @@ section#patterns a {
     font-weight: bold;
     background-color: #FBFBFB;
     padding: 10px 40px;
+    transition: .5s;
 }
 
-a.downArrow{
+a.downArrow {
+    animation: lazyLoad 2s forwards;
+    z-index: 1;
     cursor: pointer;
     position: relative;
     top: -70px;
@@ -174,6 +179,106 @@ a.downArrow{
     background-size: cover;
     background-position: center;
     animation: startPage 2s forwards;
+}
+
+#lookBooks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#lookBooks .text {
+    width: 40%;
+    text-shadow: none;
+    line-height: 1;
+    margin-left: 0;
+}
+
+#lookBooks .text h2 {
+    color: #17376A;
+    font-size: 60px;
+}
+
+#lookBooks .text a {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 55px;
+    border: 1px solid #17376A;
+    transition: .5s;
+}
+
+.panoramiqueLink a {
+    margin: 5vh 0 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-font-color);
+}
+
+.panoramiqueLink a img {
+    height: 35px;
+}
+
+#panoramique {
+    display: flex;
+    text-shadow: none;
+}
+
+#panoramique .scroll {
+    width: 50%;
+}
+
+#panoramique .scroll > img,
+#panoramique .scroll > div {
+    height: 630px;
+}
+
+#panoramique .text {
+    margin-left: 45px;
+}
+
+#panoramique .text h2 {
+    font-size: 58px;
+    margin-bottom: 0;
+    color: #17376A;
+}
+
+#panoramique .text p {
+    font-size: 32px;
+    font-weight: lighter;
+    color: #6D89A0;
+}
+
+#panoramique .text b {
+    font-weight: normal;
+    margin-left: 25px;
+}
+
+.text a:hover {
+    background-color: #17376A !important;
+    color: #FBFBFB;
+}
+
+.scroll {
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+}
+
+.scroll img {
+    height: 400px;
+}
+
+.scroll > div {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scroll > div > img {
+    height: 50%;
 }
 
 @keyframes startPage {
