@@ -176,7 +176,7 @@ a.downArrow {
     margin-top: 15vh;
     width: 1200px;
     height: 600px;
-    background-image: url("../img/background-zone1.png");
+    background-image: url("../img/homepage/background-zone1.png");
     background-size: cover;
     background-position: center;
     animation: startPage 2s forwards;
@@ -369,7 +369,7 @@ section#designer .portraits figure img {
     justify-content: center;
     align-items: center;
     width: 50%;
-    background: url("../img/backgroundHistory.png") center / 100% no-repeat;
+    background: url("../img/homepage/backgroundHistory.png") center / 100% no-repeat;
 }
 
 #history .right p {
@@ -459,6 +459,202 @@ footer .info div {
     display: flex;
     flex-direction: column;
     width: 50%;
+}
+
+/* LookBooksPage */
+
+body#lookBooksPage {
+    width: 100vw;
+}
+
+body#lookBooksPage nav#nav {
+    width: 100%;
+}
+
+body#lookBooksPage nav#nav > img {
+    margin-left: 11vw;
+}
+
+body#lookBooksPage nav#nav > div {
+    width: 60%;
+    margin-right: 11vw;
+}
+
+body#lookBooksPage #lookBooks {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10vh;
+}
+
+body#lookBooksPage #lookBooks .text {
+    color: #17376A;
+    margin-left: 11vw;
+}
+
+body#lookBooksPage #lookBooks .text h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+body#lookBooksPage #lookBooks .text h2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 23px;
+}
+
+body#lookBooksPage #lookBooks .text h2 b {
+    margin-bottom: 5vh;
+}
+
+.text .link {
+    display: flex;
+    flex-direction: column;
+}
+
+.text .link a {
+    text-align: center;
+    font-weight: normal;
+    padding: 5px 40px;
+    font-size: 10px;
+}
+
+.text .link a:nth-child(1):hover {
+    background-color: #FBFBFB !important;
+    color: #17376A;
+}
+
+.text .link a:nth-child(2) {
+    background-color: #17376A;
+    color: #FBFBFB;
+    text-align: center;
+    padding: 5px 40px;
+}
+
+body#lookBooksPage #lookBooks .image > img {
+    height: 400px;
+    margin-right: -330px;
+}
+
+.image > a > img {
+    position: absolute;
+    height: 70px;
+    right: 0;
+    top: 38%;
+}
+
+body#panoramiquePage #panoramique {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    margin: 10vh 0;
+}
+
+body#panoramiquePage #panoramique .text {
+    height: 400px;
+}
+
+body#panoramiquePage #panoramique .text h1 {
+    color: var(--main-font-color);
+    margin: 0;
+    font-size: 65px;
+}
+
+body#panoramiquePage #panoramique .text h2 {
+    margin: 0;
+    font-size: 23px;
+}
+
+body#panoramiquePage #panoramique .text h2.under-title {
+    font-size: 17px;
+    margin-left: 20vw;
+    font-weight: lighter;
+}
+
+body#panoramiquePage #panoramique .text h2.under-title b {
+    font-weight: bold;
+}
+
+body#panoramiquePage #panoramique .text .link {
+    margin-top: 5vh;
+}
+
+body#panoramiquePage #panoramique .image a > img {
+    top: 45%;
+    margin-right: 5vw;
+}
+
+body#designerPage #designer .text {
+    color: var(--main-font-color);
+}
+
+body#designerPage #designer > img {
+    position: relative;
+    left: -80px;
+}
+
+body#designerPage nav#nav,
+body#know-howPage nav#nav {
+    width: 100%;
+}
+
+body#designerPage nav#nav > img,
+body#know-howPage nav#nav > img {
+
+    margin-left: 11vw;
+}
+
+body#designerPage nav#nav > div,
+body#know-howPage nav#nav > div {
+    width: 60%;
+    margin-right: 11vw;
+}
+
+body#designerPage #designer {
+    background-color: unset;
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh 0;
+    box-shadow: none;
+}
+
+body#designerPage #designer .text figure > img {
+    height: 195px;
+    border-radius: 100%;
+}
+
+body#designerPage #designer .text figure {
+    margin: 0;
+}
+
+body#designerPage #designer .text figure figcaption h1,
+body#designerPage #designer .text figure figcaption h2 {
+    color: var(--main-font-color);
+    margin: 0;
+}
+
+body#designerPage #designer .text figure figcaption h1 {
+    font-weight: normal;
+    font-size: 42px;
+}
+
+body#designerPage #designer .text figure figcaption h2 {
+    font-weight: lighter;
+    font-size: 17px;
+    text-shadow: none;
+    align-items: normal;
+}
+
+body#designerPage #designer .text .link {
+    margin-top: 1vh;
+}
+
+body#designerPage #designer .image > a > img {
+    top: 45%;
+}
+
+body#know-how {
+
 }
 
 @keyframes startPage {
