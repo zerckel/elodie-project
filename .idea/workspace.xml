@@ -19,24 +19,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f12cfa58-1382-44d7-8d4c-83a353529d12" name="Default Changelist" comment="Fin section 1 et ajout animation nav">
-      <change afterPath="$PROJECT_DIR$/assets/img/fullDownArrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/panoramique2-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/panoramique2-2.png" afterDir="false" />
+    <list default="true" id="68ea9709-a70f-483f-83fb-9912195a6864" name="Default Changelist" comment="modif gitignore">
+      <change afterPath="$PROJECT_DIR$/assets/img/backgroundHistory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/logoFooter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/socialNetwork/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/socialNetwork/linkedin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/socialNetwork/phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/socialNetwork/twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/socialNetwork/youtube.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/Placement Area-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/Placement Area-1@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/lookbook2-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/Placement Area-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/Placement Area-2@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/lookbook2-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/Placement Area-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/Placement Area-3@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/panoramique1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/Placement Area-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/Placement Area-4@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/lookbook1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/Placement Area-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/Placement Area-7@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/blackGuy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/Placement Area.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/Placement Area@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/lookbook3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Placement Area-6@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/portraits/klein.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Placement Area-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Placement Area-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Placement Area-8@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/portraits/gulio.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Placement Area-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Placement Area-9@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/portraits/rosenbrg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/blackGuy.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/portraits/dominique.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +68,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\elodie-project\assets\img\socialNetwork" />
+      <recent name="C:\wamp64\www\elodie-project\assets\img\portraits" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="folder" />
+    </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -103,6 +114,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -118,13 +130,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="479" y="99" width="577" height="626" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1602339633660" />
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1602339737080">
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1602357135689">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824/0.1080.1097.617@0.0.1536.824" timestamp="1602357135689" />
     <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1602339737080" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602339762044">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602361505624">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/0.1080.1097.617@0.0.1536.824" timestamp="1602361505624" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1602339762044" />
   </component>
 </project>

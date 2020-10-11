@@ -5,3 +5,6 @@ window.addEventListener('scroll', function () {
     document.querySelector('#nav').classList.add('onScroll')
   }
 })
+setTimeout(function () {
+  document.querySelector('#panoramique .scroll').scrollLeft = 448
+}, 500)
