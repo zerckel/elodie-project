@@ -471,7 +471,7 @@ body#lookBooksPage nav#nav {
     width: 100%;
 }
 
-body#lookBooksPage nav#nav > img {
+body#lookBooksPage nav#nav > a > img {
     margin-left: 11vw;
 }
 
@@ -600,11 +600,10 @@ body#contactPage nav#nav {
     width: 100%;
 }
 
-body#designerPage nav#nav > img,
-body#know-howPage nav#nav > img,
-body#panoramiquePage nav#nav > img,
-body#contactPage nav#nav > img {
-
+body#designerPage nav#nav > a > img,
+body#know-howPage nav#nav > a > img,
+body#panoramiquePage nav#nav > a > img,
+body#contactPage nav#nav > a > img {
     margin-left: 11vw;
 }
 
