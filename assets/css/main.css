@@ -55,7 +55,7 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--main-font-color);
+    color: #17376A;
 }
 
 input {
@@ -109,7 +109,7 @@ nav .searchbar label > img {
 nav .searchbar label > input {
     font-size: 25px;
     width: 183px;
-    border-bottom: 1px solid var(--main-font-color);
+    border-bottom: 1px solid #17376A;
     padding-left: 25px;
 }
 
@@ -213,7 +213,7 @@ a.downArrow {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--main-font-color);
+    color: #17376A;
 }
 
 .panoramiqueLink a img {
@@ -347,7 +347,7 @@ section#designer .portraits figure img {
 }
 
 #history .text {
-    color: var(--main-font-color);
+    color: #17376A;
 }
 
 #history .left {
@@ -373,7 +373,7 @@ section#designer .portraits figure img {
 }
 
 #history .right p {
-    color: var(--main-font-color);
+    color: #17376A;
     font-size: 30px;
     padding: 110px 70px;
 }
@@ -555,7 +555,7 @@ body#panoramiquePage #panoramique .text {
 }
 
 body#panoramiquePage #panoramique .text h1 {
-    color: var(--main-font-color);
+    color: #17376A;
     margin: 0;
     font-size: 65px;
 }
@@ -585,7 +585,7 @@ body#panoramiquePage #panoramique .image a > img {
 }
 
 body#designerPage #designer .text {
-    color: var(--main-font-color);
+    color: #17376A;
 }
 
 body#designerPage #designer > img {
@@ -594,18 +594,24 @@ body#designerPage #designer > img {
 }
 
 body#designerPage nav#nav,
-body#know-howPage nav#nav {
+body#know-howPage nav#nav,
+body#panoramiquePage nav#nav,
+body#contactPage nav#nav {
     width: 100%;
 }
 
 body#designerPage nav#nav > img,
-body#know-howPage nav#nav > img {
+body#know-howPage nav#nav > img,
+body#panoramiquePage nav#nav > img,
+body#contactPage nav#nav > img {
 
     margin-left: 11vw;
 }
 
 body#designerPage nav#nav > div,
-body#know-howPage nav#nav > div {
+body#know-howPage nav#nav > div,
+body#panoramiquePage nav#nav > div,
+body#contactPage nav#nav > div {
     width: 60%;
     margin-right: 11vw;
 }
@@ -629,7 +635,7 @@ body#designerPage #designer .text figure {
 
 body#designerPage #designer .text figure figcaption h1,
 body#designerPage #designer .text figure figcaption h2 {
-    color: var(--main-font-color);
+    color: #17376A;
     margin: 0;
 }
 
@@ -653,8 +659,52 @@ body#designerPage #designer .image > a > img {
     top: 45%;
 }
 
-body#know-how {
+body#know-howPage #know-how {
+    display: flex;
+    justify-content: space-between;
+    margin: 10vh 0;
+}
 
+body#know-howPage #know-how .text {
+    font-size: 20px;
+    width: 30%;
+    color: #17376A;
+    padding: 50px 50px 50px 10px;
+    border-bottom: 1px solid #17376A;
+    border-top: 1px solid #17376A;
+    border-right: 1px solid #17376A;
+}
+
+body#know-howPage #know-how .right-sect {
+    height: 100%;
+    margin-right: 10vw;
+    width: 30%;
+}
+
+body#know-howPage #know-how .right-sect .text {
+    background-color: rgba(255, 255, 255, .5);
+    position: absolute;
+    border: none;
+    height: 400px;
+    width: 17%;
+    padding: 0;
+}
+
+body#know-howPage #know-how .right-sect .text h2 {
+    font-size: 13px;
+    text-align: center;
+    margin-left: 2.5vw;
+    padding: 10px 20px;
+    color: #FBFBFB;
+    background-color: #17376A;
+}
+
+body#know-howPage #know-how .right-sect .text ul {
+    list-style: none;
+}
+
+body#know-howPage #know-how .right-sect .text ul li {
+    font-size: 24px;
 }
 
 @keyframes startPage {
