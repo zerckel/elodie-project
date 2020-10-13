@@ -685,8 +685,14 @@ body#know-howPage #know-how .right-sect .text {
     position: absolute;
     border: none;
     height: 400px;
+    transition: .5s;
+    right: 22%;
     width: 17%;
     padding: 0;
+}
+
+body#know-howPage #know-how .right-sect:hover .text {
+    right: 40%;
 }
 
 body#know-howPage #know-how .right-sect .text h2 {
@@ -705,6 +711,7 @@ body#know-howPage #know-how .right-sect .text ul {
 body#know-howPage #know-how .right-sect .text ul li {
     font-size: 24px;
 }
+
 
 @keyframes startPage {
     0% {
