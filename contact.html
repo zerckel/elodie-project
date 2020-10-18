@@ -12,8 +12,7 @@
 <div class="container">
     <nav id="nav">
         <a href="index.html">
-            <img src="assets/img/header/logo.png" alt="Logo">
-        </a>
+            <img src="assets/img/header/logo.png" alt="Logo"></a>
         <div>
             <span><a href="lookbook.html">LookBook</a></span>
             <span><a href="panoramique.html">Panoramique</a></span>
@@ -28,7 +27,45 @@
             </div>
         </div>
     </nav>
+    <form id="contact">
+        <div id="headForm">
+            <h1>
+                Contact
+            </h1>
+            <i>
+                Veuillez sélectionner le designer
+            </i>
+            <label for="designerChoice">
+                <select name="designerChoice" id="designerChoice">
+                    <option value="">Georgia Klein</option>
+                    <option value="">Gulio</option>
+                    <option value="">Colette Rosenbrg</option>
+                    <option value="">Stephan Dominique</option>
+                </select>
+            </label>
+        </div>
+        <div id="mainForm">
+            <label for="name">
+                <input id="name" type="text" placeholder="name">
+            </label>
+            <label for="email">
+                <input id="email" type="email" placeholder="Email">
+            </label>
+            <label for="tel">
+                <input id="tel" type="number" placeholder="Téléphone">
+            </label>
+            <label for="reason">
+                <input id="reason" type="text" placeholder="PARTICULIER OU RAISON SOCIAL">
+            </label>
+            <label for="message">
+                <textarea id="message" placeholder="message"></textarea>
+            </label>
+            <button type="button">
+                ENVOYER
+            </button>
+        </div>
 
+    </form>
 </div>
 <footer>
     <div class="follow">

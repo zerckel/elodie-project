@@ -67,6 +67,22 @@ input:focus {
     outline: none;
 }
 
+div#fog {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+div#fog > img {
+    height: 80vh;
+    width: auto;
+}
+
 div.container {
     width: 1200px;
     display: flex;
@@ -384,7 +400,16 @@ footer {
     background-color: #0F2F61;
     color: #FBFBFB;
     width: 100vw;
-    height: 45vh;
+    height: 35vh;
+    margin-top: 5vh;
+}
+
+footer h2 {
+    font-size: 16px;
+}
+
+footer a {
+    font-size: 13px;
 }
 
 footer .follow {
@@ -392,11 +417,10 @@ footer .follow {
     flex-direction: column;
     justify-content: start;
     margin-left: 25px;
-    width: 25%;
+    width: 20%;
 }
 
 footer .follow h2 {
-    font-size: 24px;
     font-weight: normal;
 }
 
@@ -413,7 +437,7 @@ footer .social {
 
 footer .social > img {
     cursor: pointer;
-    height: 48px;
+    height: 35px;
 }
 
 footer .copyright {
@@ -430,7 +454,7 @@ footer .us {
 
 footer .us img {
     margin-top: 5vh;
-    width: 250px;
+    width: 230px;
 }
 
 footer .info {
@@ -452,6 +476,7 @@ footer .info ul li {
 }
 
 footer ul li a {
+    font-size: 13px;
     color: #FBFBFB;
 }
 
@@ -712,6 +737,95 @@ body#know-howPage #know-how .right-sect .text ul li {
     font-size: 24px;
 }
 
+form#contact {
+    width: 100%;
+}
+
+form#contact #headForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--main-font-color);
+}
+
+form#contact #headForm h1 {
+    margin: 0;
+    font-size: 38px;
+    font-weight: normal;
+}
+
+form#contact #headForm i {
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+form#contact #headForm #designerChoice {
+    margin-top: 10px;
+    border-color: var(--main-font-color) !important;
+    border-width: 1px;
+    color: var(--main-font-color);
+    padding: 10px;
+    font-size: 19px;
+    outline: none;
+    font-weight: lighter;
+}
+
+form#contact #mainForm {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+form#contact #mainForm label {
+    width: 50%;
+    margin: 20px 0;
+}
+
+form#contact #mainForm label input {
+    width: 80%;
+    border-bottom: 1px solid var(--main-font-color);
+    font-size: 19px;
+    padding-bottom: 10px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+form#contact #mainForm label input::placeholder {
+    color: var(--main-font-color);
+}
+
+form#contact #mainForm label #message {
+    background-color: #FBFBFB;
+    text-transform: uppercase;
+    resize: none;
+    font-size: 19px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: var(--main-font-color);
+    width: 95%;
+}
+
+form#contact #mainForm label #message::placeholder {
+    color: var(--main-font-color);
+}
+
+form#contact #mainForm label #message:focus {
+    outline: none;
+}
+
+form#contact #mainForm button {
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 15vw;
+    height: 50px;
+    padding: 0 40px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #0F2F61;
+    color: #FBFBFB;
+}
 
 @keyframes startPage {
     0% {
@@ -739,6 +853,236 @@ body#know-howPage #know-how .right-sect .text ul li {
     }
     100% {
         opacity: 1;
+    }
+
+}
+
+/* responsive */
+
+@media screen and (max-width: 1200px) {
+    div.container {
+        width: 100%;
+    }
+
+    nav {
+        padding: 2vh 5vw;
+        width: calc(100% - 10vw);
+        align-items: center;
+    }
+
+    nav > a {
+        width: 20%;
+    }
+
+    nav > a > img {
+        width: 80%;
+    }
+
+    nav .searchbar label > input {
+        width: 125px;
+    }
+
+    nav.onScroll {
+        padding: 1vh 5vw;
+    }
+
+    section#patterns {
+        top: 0;
+    }
+
+    .background-anim {
+        width: 100%;
+        margin-top: 10vh;
+    }
+
+    #designer .portraits {
+        justify-content: center;
+    }
+
+    #history {
+        justify-content: space-around;
+        margin-bottom: 0;
+    }
+
+    #history .right p {
+        font-size: 25px;
+    }
+
+    footer {
+        height: 25vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav > div {
+        width: 75%;
+        font-size: 11px;
+    }
+
+    #lookBooks .text {
+        width: 80%;
+        padding-left: 10px;
+    }
+
+    section#designer {
+        margin: 15vh 0 5vh;
+        padding-bottom: 0;
+    }
+
+    #history .text h2 {
+        font-size: 45px;
+    }
+
+    #history .text p {
+        font-size: 15px;
+    }
+
+    #history .right p {
+        font-size: 15px;
+    }
+
+    #history .right {
+        background: url(../img/homepage/backgroundHistory.png) center / 85% no-repeat;
+    }
+
+    .text a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    nav > div {
+        flex-wrap: wrap;
+    }
+
+    nav > a {
+        width: 50%;
+    }
+
+    nav div.searchbar {
+        display: none;
+    }
+
+    section#patterns {
+        height: 500px;
+    }
+
+    section#patterns .text {
+        width: 100vw;
+    }
+
+    section#patterns h1 {
+        font-size: 60px;
+    }
+
+    section#patterns h2 {
+        font-size: 20px;
+    }
+
+    .background-anim {
+        height: 520px;
+    }
+
+    .scroll {
+        margin-top: 10px;
+        width: 100vw;
+    }
+
+    .scroll img {
+        height: 310px;
+    }
+
+    #lookBooks,
+    #panoramique {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .panoramiqueLink a {
+        margin-top: 0;
+    }
+
+    #panoramique {
+        flex-direction: column-reverse;
+    }
+
+    #panoramique .text {
+        align-items: center;
+        margin-left: 0;
+        padding-left: 5px;
+    }
+
+    #panoramique .text h2 {
+        font-size: 40px;
+    }
+
+    #panoramique .text p {
+        font-size: 20px;
+    }
+
+    #panoramique .scroll {
+        width: 100%;
+    }
+
+    #panoramique .scroll > img,
+    #panoramique .scroll > div {
+        height: 340px;
+    }
+
+    section#designer .portraits figure {
+        flex-direction: column;
+    }
+
+    #designer h2 {
+        text-align: center;
+    }
+
+    #designer .portraits figure figcaption b {
+        text-align: center;
+    }
+
+    #designer .portraits figure figcaption > span {
+        margin-left: 0 !important;
+    }
+
+    #history {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #history .text p {
+        text-align: center;
+        width: 100%;
+    }
+
+    #history .text h2 {
+       text-align: center;
+    }
+
+    #history .left {
+        align-items: center;
+    }
+
+    #history .right {
+        width: 100%;
+        background: url(../img/homepage/backgroundHistory.png) center / 83% no-repeat;
+    }
+
+    footer {
+        height: unset;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 5vh;
+    }
+
+    footer div {
+        text-align: center!important;
+    }
+
+    footer > div {
+        width: 90%!important;
+        margin-left: 0!important;
     }
 
 }
