@@ -909,7 +909,63 @@ form#contact #mainForm button {
     }
 
     footer {
+        flex-grow: 4;
         height: 25vh;
+    }
+
+    body#lookBooksPage,
+    body#panoramiquePage,
+    body#designerPage {
+        min-height: 100vh;
+    }
+
+    body#lookBooksPage nav#nav > a > img,
+    body#panoramiquePage nav#nav > a > img,
+    body#designerPage nav#nav > a > img {
+        margin-left: 1vw;
+    }
+
+    body#lookBooksPage nav#nav > div,
+    body#panoramiquePage nav#nav > div,
+    body#designerPage nav#nav > div {
+        width: 75%;
+        margin-right: 1vw;
+    }
+
+    body#lookBooksPage #lookBooks {
+        margin-top: 5vh;
+        margin-bottom: 0;
+    }
+
+    body#lookBooksPage #lookBooks > .image {
+        display: flex;
+        align-items: center;
+        width: 60%;
+    }
+
+    body#lookBooksPage #lookBooks .text {
+        margin-left: 5vw;
+    }
+
+    body#lookBooksPage #lookBooks .image > img {
+        height: 300px;
+        margin-right: 0;
+    }
+
+    body#lookBooksPage #lookBooks .text h2 b {
+        margin-bottom: 3vh;
+    }
+
+    .image > a > img {
+        top: 25%;
+    }
+
+    body#panoramiquePage #panoramique {
+        margin: 0;
+    }
+
+    body#panoramiquePage #panoramique .image a > img {
+        top: 30%;
     }
 }
 
@@ -945,8 +1001,20 @@ form#contact #mainForm button {
         background: url(../img/homepage/backgroundHistory.png) center / 85% no-repeat;
     }
 
+    body#panoramiquePage #panoramique > .image > .imgZoom:first-of-type {
+        display: none;
+    }
+
+    #panoramique {
+        flex-direction: column-reverse;
+    }
+
     .text a {
         font-size: 13px;
+    }
+
+    body#panoramiquePage #panoramique > .imgZoom {
+        display: none;
     }
 }
 
@@ -1003,10 +1071,6 @@ form#contact #mainForm button {
         margin-top: 0;
     }
 
-    #panoramique {
-        flex-direction: column-reverse;
-    }
-
     #panoramique .text {
         align-items: center;
         margin-left: 0;
@@ -1057,7 +1121,7 @@ form#contact #mainForm button {
     }
 
     #history .text h2 {
-       text-align: center;
+        text-align: center;
     }
 
     #history .left {
@@ -1077,12 +1141,65 @@ form#contact #mainForm button {
     }
 
     footer div {
-        text-align: center!important;
+        text-align: center !important;
     }
 
     footer > div {
-        width: 90%!important;
-        margin-left: 0!important;
+        width: 90% !important;
+        margin-left: 0 !important;
+    }
+
+    .image > a > img {
+        display: none;
+    }
+
+    body#lookBooksPage #lookBooks .text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    body#lookBooksPage #lookBooks > .image {
+        width: 100%;
+        margin-top: 25px;
+        justify-content: center;
+    }
+
+    body#lookBooksPage #lookBooks .image > img {
+        height: 120px;
+    }
+
+    body#panoramiquePage #panoramique > .imgZoom {
+        width: 100%;
+        height: auto;
+    }
+
+    body#panoramiquePage #panoramique .text h1 {
+        color: #17376A;
+        margin: 0;
+        font-size: 40px;
+    }
+
+    body#panoramiquePage #panoramique .text h2 {
+        margin: 10px 0;
+        font-size: 15px;
+    }
+
+    body#panoramiquePage #panoramique {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        margin: 0 0 10vh;
+    }
+
+    body#panoramiquePage #panoramique {
+        flex-direction: column-reverse;
+    }
+
+    body#panoramiquePage #panoramique > .imgZoom {
+        display: block;
     }
 
 }
