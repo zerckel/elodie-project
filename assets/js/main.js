@@ -1,4 +1,3 @@
-// Ajout d'une class au scroll de la nav
 window.addEventListener('scroll', function () {
   if (window.scrollY === 0) {
     document.querySelector('#nav').classList.remove('onScroll')
@@ -7,12 +6,12 @@ window.addEventListener('scroll', function () {
   }
 })
 
-// cale a droite le scroll de la div de la homepage
-setTimeout(function () {
-  document.querySelector('#panoramique .scroll').scrollLeft = 448
-}, 500)
+function setScrollHomepage() {
+  setTimeout(function () {
+    document.querySelector('#panoramique .scroll').scrollLeft = 448
+  }, 500)
+}
 
-// Select tout elem d'une class et leur attribut un eventListener avec une fonction
 function setEventOnAll(listElem) {
   listElem.forEach((element) => element.addEventListener("click", fullScreenImg))
 }
@@ -27,3 +26,4 @@ function fullScreenImg() {
 }
 
 setEventOnAll(document.querySelectorAll('.imgZoom'))
+document.querySelector('#homepage') ? setScrollHomepage() : false

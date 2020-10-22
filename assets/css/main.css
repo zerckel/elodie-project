@@ -34,6 +34,54 @@
     font-display: swap;
 }
 
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, ins, kbd, legend, li, mark, menu, object, ol, output, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+html {
+    box-sizing: border-box
+}
+
+::after, ::before {
+    box-sizing: inherit
+}
+
+video {
+    width: 100%;
+    vertical-align: middle;
+}
+
 :root {
     --main-font-color: #17376A;
 }
@@ -49,6 +97,7 @@ body {
     align-items: center;
     background-color: #FBFBFB;
     width: 100vw;
+    min-height: 100vh;
     margin: 0;
     overflow-x: hidden;
 }
@@ -135,6 +184,11 @@ nav.onScroll {
 
 section {
     width: 100%;
+}
+
+body#homepage h2,
+body#homepage p {
+    margin: 20px 0;
 }
 
 section .text {
@@ -358,6 +412,7 @@ section#designer .portraits figure img {
 
 #history {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 15vh;
 }
@@ -377,6 +432,7 @@ section#designer .portraits figure img {
 }
 
 #history .text p {
+    line-height: 1.1;
     font-size: 20px;
 }
 
@@ -384,7 +440,7 @@ section#designer .portraits figure img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 45%;
     background: url("../img/homepage/backgroundHistory.png") center / 100% no-repeat;
 }
 
@@ -400,8 +456,9 @@ footer {
     background-color: #0F2F61;
     color: #FBFBFB;
     width: 100vw;
-    height: 35vh;
+    height: 25vh;
     margin-top: 5vh;
+    padding-top: 5vh;
 }
 
 footer h2 {
@@ -486,7 +543,6 @@ footer .info div {
     width: 50%;
 }
 
-/* LookBooksPage */
 
 body#lookBooksPage {
     width: 100vw;
@@ -857,8 +913,6 @@ form#contact #mainForm button {
 
 }
 
-/* responsive */
-
 @media screen and (max-width: 1200px) {
     div.container {
         width: 100%;
@@ -915,12 +969,14 @@ form#contact #mainForm button {
 
     body#lookBooksPage,
     body#panoramiquePage,
+    body#know-howPage,
     body#designerPage {
         min-height: 100vh;
     }
 
     body#lookBooksPage nav#nav > a > img,
     body#panoramiquePage nav#nav > a > img,
+    body#know-howPage nav#nav > a > img,
     body#designerPage nav#nav > a > img {
         margin-left: 1vw;
     }
@@ -966,6 +1022,10 @@ form#contact #mainForm button {
 
     body#panoramiquePage #panoramique .image a > img {
         top: 30%;
+    }
+
+    form#contact {
+        width: 90%;
     }
 }
 
@@ -1015,6 +1075,45 @@ form#contact #mainForm button {
 
     body#panoramiquePage #panoramique > .imgZoom {
         display: none;
+    }
+
+    body#designerPage #designer > img {
+        left: 0;
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    body#designerPage #designer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    body#designerPage #designer .text figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body#designerPage #designer .text {
+        align-items: center;
+    }
+
+    body#designerPage #designer {
+        margin: 0;
+    }
+
+    body#designerPage #designer a > .imgZoom {
+        display: none;
+    }
+
+    body#designerPage #designer > .image > .imgZoom {
+        display: none;
+    }
+
+    div#fog > img {
+        height: auto;
+        width: 90vw;
     }
 }
 
@@ -1149,6 +1248,10 @@ form#contact #mainForm button {
         margin-left: 0 !important;
     }
 
+    footer .us {
+        margin-top: 20px;
+    }
+
     .image > a > img {
         display: none;
     }
@@ -1202,4 +1305,41 @@ form#contact #mainForm button {
         display: block;
     }
 
+    body#know-howPage #know-how {
+        flex-direction: column-reverse;
+    }
+
+    body#know-howPage #know-how .text {
+        width: 85%;
+        padding: 30px;
+    }
+
+    body#know-howPage #know-how .right-sect .text {
+        right: 43%;
+        width: 55%;
+    }
+
+    form#contact #headForm h1 {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    form#contact #headForm i,
+    form#contact #mainForm label input,
+    form#contact #mainForm label #message,
+    form#contact #headForm #designerChoice {
+        font-size: 15px;
+    }
+
+    form#contact #mainForm button {
+        height: 45px;
+        padding: 0 30px;
+        margin-right: 0;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    form#contact #mainForm label:last-of-type {
+        width: 100%;
+    }
 }
