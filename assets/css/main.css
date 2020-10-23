@@ -575,7 +575,7 @@ body#lookBooksPage #lookBooks .text {
 body#lookBooksPage #lookBooks .text h1 {
     font-size: 65px;
     line-height: 1.1;
-    margin: 0;
+    margin-bottom:5vh;
 }
 
 body#lookBooksPage #lookBooks .text h2 {
@@ -726,6 +726,7 @@ body#designerPage #designer .text figure figcaption h1 {
 
 body#designerPage #designer .text figure figcaption h2 {
     font-weight: lighter;
+    margin: 10px 0;
     font-size: 17px;
     text-shadow: none;
     align-items: normal;
@@ -786,6 +787,8 @@ body#know-howPage #know-how .right-sect .text h2 {
 }
 
 body#know-howPage #know-how .right-sect .text ul {
+    margin-top: 1vh;
+    padding-left: 40px;
     list-style: none;
 }
 
@@ -852,6 +855,7 @@ form#contact #mainForm label input::placeholder {
 }
 
 form#contact #mainForm label #message {
+    font-family: 'Poppins', sans-serif;
     background-color: #FBFBFB;
     text-transform: uppercase;
     resize: none;
