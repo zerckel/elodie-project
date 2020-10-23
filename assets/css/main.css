@@ -455,6 +455,7 @@ footer {
     justify-content: space-between;
     background-color: #0F2F61;
     color: #FBFBFB;
+    flex-grow: 4;
     width: 100vw;
     height: 25vh;
     margin-top: 5vh;
@@ -967,7 +968,6 @@ form#contact #mainForm button {
     }
 
     footer {
-        flex-grow: 4;
         height: 25vh;
     }
 
